@@ -14,6 +14,197 @@
     live
     ctrl + shift + p = preview - show preview
     -->
-    <h1 class="text-xl">ola mundo</h1>
+    <nav class="f-bg">
+      <ul>
+        <li><a href="#">Basico</a></li>
+        <li><a href="#">cores</a></li>
+        <li><a href="#">Modificadores</a></li>
+        <li><a href="#">efeitos</a></li>
+        <li><a href="#">custom</a></li>
+        <li><a href="#">utilidades</a></li>
+      </ul>
+    </nav>
+
+    <!-- inicio container -->
+    <div class="f-container">
+      <div class="f-content">
+        <h2>Width, Height e Size</h2>
+        <p>Você precisa colocar as classes nas tags</p>
+        <p>
+          w- e h- para definir largura e altura. size- para definir largura e
+          altura iguais.
+        </p>
+
+        <p class="f-code">
+          class="bg-gray-300">Normal
+          <br />class="bg-gray-300 w-20 h-24">w-20 h-24 <br />class="bg-gray-300
+          size-32">size-32
+        </p>
+      </div>
+
+      <div class="f-exemple">
+        <div class="bg-gray-300">Normal</div>
+        <div class="bg-gray-300 w-20 h-24">w-20 h-24</div>
+        <div class="bg-gray-300 size-32">size-32</div>
+      </div>
+    </div>
+    <!-- fim container -->
+
+    <!-- inicio container -->
+    <div class="f-container">
+      <div class="f-content">
+        <h2>Básico de Cores</h2>
+        <p>
+          Todas elas possuem valores de 50 (claro) até 950 (escuro). Além de
+          valores como white e black
+        </p>
+
+        <p class="f-code">
+          class="bg-gray-900 text-gray-200"
+          <br />class="bg-red-600" <br />class="bg-yellow-400"
+          <br />class="bg-green-300 text-green-950" <br />class="bg-cyan-400
+          text-cyan-950" <br />class="bg-indigo-800 text-white"
+        </p>
+      </div>
+
+      <div class="f-exemple">
+        <div class="bg-gray-900 text-gray-200">bg-gray-900 text-gray-200</div>
+        <div class="bg-red-600">bg-red-600</div>
+        <div class="bg-yellow-400">bg-yellow-400</div>
+        <div class="bg-green-300 text-green-950">
+          bg-green-300 text-green-950
+        </div>
+        <div class="bg-cyan-400 text-cyan-950">bg-cyan-400 text-cyan-950</div>
+        <div class="bg-indigo-800 text-white">bg-indigo-800 text-white</div>
+      </div>
+    </div>
+    <!-- fim container -->
+
+    <!-- inicio container -->
+    <div class="f-container">
+      <div class="f-content">
+        <h2>Unidades</h2>
+        <p>
+          Em geral, as unidades são geradas de 4px em 4px, então w-2 = 8px e w-5
+          = 20px. O Tailwind traduz o px para rem.<br />Existem exceções. w-1/2
+          = 50%, w-full = 100% e w-px é 1px. <br />existe alguns elementos como
+          o border radius que eles não seguem esse padrão, eles usam o px mesmo
+        </p>
+
+        <p class="f-code">
+          class="bg-gray-300 w-24"
+          <br />class="bg-gray-300 w-1/2"
+        </p>
+      </div>
+
+      <div class="f-exemple">
+        <div class="bg-gray-300 w-24">HTML</div>
+        <div class="bg-gray-300 w-1/2">CSS</div>
+      </div>
+    </div>
+    <!-- fim container -->
+
+    <!-- inicio container -->
+    <div class="f-container">
+      <div class="f-content">
+        <h2>Padding e Margin</h2>
+        <p>
+          p- para padding e m- para margin.
+          <br />
+          py- para top/bottom, px- para left/right.
+          <br />
+          pt- = top, pb- = bottom, pr- = right, pl- = left.
+          <br />
+          É possível ter valores negativos para margin, como -mt-10 e auto
+          mx-auto, não da para usar negativo no padding.
+        </p>
+
+        <p class="f-code">
+          class="grid justify-items-start"
+          <br />class="bg-gray-300 p-8" <br />class="bg-gray-400 mt-8 px-4 py-8"
+          <br />class="bg-gray-200 pb-12 -mt-4 " <br />class="bg-gray-600
+          m-auto"
+        </p>
+      </div>
+
+      <div class="f-exemple">
+        <div class="grid justify-items-start">
+          <p class="bg-gray-300 p-8">p-8</p>
+          <p class="bg-gray-400 mt-8 px-4 py-8">px-4 py-8</p>
+          <p class="bg-gray-200 pb-12 -mt-4">pb-12 -mt-4</p>
+          <p class="bg-gray-600 m-auto">m-auto</p>
+        </div>
+      </div>
+    </div>
+    <!-- fim container -->
+
+    <!-- inicio container -->
+    <div class="f-container">
+      <div class="f-content">
+        <h2>Border</h2>
+        <p>
+          Os valores de border são especificados em px, então border-4 é 4px de
+          borda. <br />Os valores de bottom, top e etc são separados por -, por
+          exemplo, border-b, e não borderb.
+        </p>
+
+        <p class="f-code">
+          class="bg-gray-300 p-4 mb-4 border border-gray-800"
+          <br />class="bg-gray-300 p-4 mb-4 border-b-4 border-gray-800"
+          <br />class="bg-gray-300 p-4 border-x-4 border-gray-800"
+        </p>
+      </div>
+
+      <div class="f-exemple">
+        <!--  -->
+        <div class="bg-gray-300 p-4 mb-4 border border-gray-800">
+          border border-gray-800
+        </div>
+        <div class="bg-gray-300 p-4 mb-4 border-b-4 border-gray-800">
+          border-b-4 border-gray-800
+        </div>
+        <div class="bg-gray-300 p-4 border-x-4 border-gray-800">
+          border-x-4 border-gray-800
+        </div>
+        <!--  -->
+      </div>
+    </div>
+    <!-- fim container -->
+
+    <!-- inicio container -->
+    <div class="f-container">
+      <div class="f-content">
+        <h2>box-sizing</h2>
+        <p>
+          Diferente do HTML padrão, o Tailwind define os elementos com
+          box-sizing: border-box;. Sendo assim, os valores de border e padding
+          são absorvidos pelo valor do height e não somados ao mesmo. Podemos
+          mudar para o comportamento padrão com box-content
+        </p>
+
+        <p class="f-code">
+          class="bg-gray-300 border-gray-800 mb-4 p-4 border-y-4 h-16 box-border
+          <br />class="bg-gray-300 border-gray-800 mb-4 p-4 border-y-4 h-16 pt-8
+          box-content"
+        </p>
+      </div>
+
+      <div class="f-exemple">
+        <!--  -->
+        <div
+          class="bg-gray-300 border-gray-800 mb-4 p-4 border-y-4 h-16 box-border"
+        >
+          p-4 border-y-4 h-16 box-border
+        </div>
+        <div
+          class="bg-gray-300 border-gray-800 mb-4 p-4 border-y-4 h-16 pt-8 box-content"
+        >
+          p-4 border-y-4 h-16 pt-8 box-content
+        </div>
+
+        <!--  -->
+      </div>
+    </div>
+    <!-- fim container -->
   </body>
 </html>

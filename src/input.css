@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: rgb(149, 149, 149);
+}
+.f-container {
+  width: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.f-bg {
+  width: fit-content;
+  background-color: #fff;
+  margin: 10px auto 0 auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+.f-bg ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.f-content h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.f-code {
+  background-color: rgb(224, 224, 224);
+  padding: 10px;
+  border-radius: 10px;
+}
+.f-exemple {
+  border: 1px solid rgb(224, 224, 224);
+  padding: 10px;
+  border-radius: 10px;
+}
