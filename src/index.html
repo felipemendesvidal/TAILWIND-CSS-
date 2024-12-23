@@ -244,16 +244,98 @@
           <div class="w-60">
             <h2 class="text-2xl my-3">linguas</h2>
             <ul>
-              <li class="border-l-2 border-purple-600 p-2 bg-slate-200">portugues</li>
-              <li class="border-l-2 border-purple-600 p-2 bg-slate-400 ml-2 -mt-1">
+              <li class="border-l-2 border-purple-600 p-2 bg-slate-200">
+                portugues
+              </li>
+              <li
+                class="border-l-2 border-purple-600 p-2 bg-slate-400 ml-2 -mt-1"
+              >
                 matematica
               </li>
-              <li class="border-l-2 border-purple-600 p-2 bg-slate-600 ml-4 -mt-1">ingles</li>
+              <li
+                class="border-l-2 border-purple-600 p-2 bg-slate-600 ml-4 -mt-1"
+              >
+                ingles
+              </li>
             </ul>
+          </div>
+
+          <!--  -->
+        </div>
+      </div>
+    </div>
+    <!-- fim container -->
+
+    <!-- inicio container -->
+    <div class="f-container">
+      <!-- conteint -->
+      <div class="f-content">
+        <h2>Valores Arbitrários</h2>
+        <p>
+          É uma forma de por o valor que você quer, direto da class. Use o [] na
+          class para aplicar qualquer valor CSS que não esteja disponível nas
+          classes padrão do Tailwind CSS. Um valor arbitrário que for
+          constantemente utilizado, deve se transformar em uma classe
+          utilitárias (configurações).
+        </p>
+        <p>
+          não pode usar espaços, Podemos usar calc, variáveis de css e mais nos
+          valores arbitrários.
+        </p>
+
+        <p class="f-code">
+          class="w-[45%] h-[200px] bg-[#a8f] pt-[calc(10%-20px)]
+        </p>
+
+        <p class="f-code mt-3">
+          <br />
+          html { --positivo: #2e0; }<br />
+
+          <br /><br />
+          class="w-[calc(50%-10px)] bg-[--positivo] "<br />
+          w-[calc(50%-10px)] bg-[--positivo]
+          <br />
+        </p>
+      </div>
+      <!-- fim contante -->
+
+      <!-- inicio exemple -->
+      <div class="f-exemple">
+        <!-- inicio -->
+        <div class="w-[45%] h-[200px] bg-[#a8f] pt-[calc(10%-20px)]">
+          w-[45%] h-[200px] bg-[#a8f] pt-[calc(10%-20px)]
         </div>
 
-        <!--  -->
+        <!-- fim -->
       </div>
+      <!-- fim exemple -->
+    </div>
+    <!-- fim container -->
+
+    <!-- inicio container -->
+    <div class="f-container">
+      <!-- conteint -->
+      <div class="f-content">
+        <h2>Espaços e Vírgulas</h2>
+        <p>
+          A classe no Tailwind não pode ter espaços, então para lidar com eles o
+          usamos o _. Você pode usar as vírgulas normalmente.
+        </p>
+
+        <p class="f-code">class="shadow-[0_2px_4px_2px_rgba(0,0,0,0.25)] p-4</p>
+      </div>
+      <!-- fim contante -->
+
+      <!-- inicio exemple -->
+      <div class="f-exemple">
+        <!-- inicio -->
+        <div class="shadow-[0_2px_4px_2px_rgba(0,0,0,0.25)] p-4">
+          shadow-[0_2px_4px_2px_rgba(0,0,0,0.25)] p-4
+        </div>
+
+        <!-- fim -->
+      </div>
+      <!-- fim exemple -->
     </div>
     <!-- fim container -->
   </body>
