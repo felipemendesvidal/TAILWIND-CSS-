@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Botão de Desbloquear</title>
+
+    <style> 
+  body{
+    touch-action: pan-x;
+  }
+
+ .containerbtn {
+   width: 370px;
+   height: 65px;
+  position: relative!important;
+  overflow: hidden!important;
+ 
+  
+  background-color:#fff;
+  border-radius: 50px;
+  touch-action: pan-x;
+}
+
+
+ .container-button-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+ 
+  
+  
+  
+}
+
+
+
+ .message {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 50px;
+ 
+  font-size: 16px;
+  z-index: 1; /* Para que a mensagem fique acima do fundo */
+}
+
+
+.slider{
+  width: 180px; /* Largura do botão */
+  height:50px ;
+  background-color: brown;
+ 
+  border-radius: 100px;
+  position: absolute;
+  left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: left 0.3s ease;
+  z-index: 2; /* Para que o botão fique acima da mensagem */
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="containerbtn "> 
+  
+        <a  class="container-button-wrapper" href="#"> 
+            
+                    <span class="btnlu3 slider">Fazer Entrevista </span> 
+                    <span class="message">Sua última chance</span>
+              
+        </a> 
+        
+  
+</div>
+
+
+
+
+
+<script>
+    const slider = document.querySelector('.slider');
+    const sliderContainer = document.querySelector('.slider-container a');
+  const whatsappLink = "https://wa.me/5511987942612"; // Substitua pelo seu número
+
+  let isDragging = false;
+
+
+  const openWhatsApp = () => {
+            window.open(whatsappLink, '_blank');
+        };
+
+
+        const startDrag = (e) => {
+            isDragging = true;
+            const startX = e.touches ? e.touches[0].clientX : e.clientX;
+
+            const onMove = (e) => {
+                if (!isDragging) return;
+                const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+                const dx = clientX - startX;
+                const newLeft = Math.min(Math.max(dx + 8, 8), sliderContainer.clientWidth - slider.clientWidth - 8);
+                slider.style.left = newLeft + 'px';
+            };
+
+            const endDrag = () => {
+                isDragging = false;
+                const sliderWidth = slider.clientWidth;
+                const containerWidth = sliderContainer.clientWidth;
+
+                // Verifica se o botão foi arrastado para a posição final
+                if (parseInt(slider.style.left) > containerWidth - sliderWidth - 8) {
+                    // Chama a função para abrir o WhatsApp
+                    openWhatsApp();
+                } else {
+                    slider.style.left = '8px'; // Retornar para a posição inicial
+                }
+
+                // Remove os eventos de movimento e finalização
+                document.removeEventListener('mousemove', onMove);
+                document.removeEventListener('mouseup', endDrag);
+                document.removeEventListener('touchmove', onMove);
+                document.removeEventListener('touchend', endDrag);
+            };
+
+            // Adiciona os eventos de movimento e finalização
+            document.addEventListener('mousemove', onMove);
+            document.addEventListener('mouseup', endDrag);
+            document.addEventListener('touchmove', onMove);
+            document.addEventListener('touchend', endDrag);
+        };
+
+        // Adiciona os eventos de início de arrasto
+        sliderContainer.addEventListener('mousedown', startDrag);
+        sliderContainer.addEventListener('touchstart', startDrag);
+</script>
+    
+    
+    
+    
+</body>
+</html>
+
+
+
+
