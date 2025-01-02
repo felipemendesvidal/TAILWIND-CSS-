@@ -338,5 +338,119 @@
       <!-- fim exemple -->
     </div>
     <!-- fim container -->
+
+    <!-- inicio container -->
+    <div class="f-container">
+      <!-- conteint -->
+      <div class="f-content">
+        <h2>Grid</h2>
+        <p>
+          grid define o display como grid
+          <br />
+          grid-cols- - cria colunas de 1fr
+          <br />
+          grid-rows- - cria linhas de 1fr
+          <br />
+          gap-x-, gap-y- e gap- - define o gap
+          <br />
+          obs: da para falar com todos os filhos de uma vez usando *: no
+          container pai, se repetir as class nos filhos
+          <br />
+          Para valores diferentes Use valores arbitrários
+          grid-cols-[1fr_2fr_outracoluna]
+        </p>
+
+        <p class="f-code">
+          class="grid grid-cols-2 gap-x-4 gap-y-8"<br />class="grid grid-cols-3
+          gap-x-4 gap-y-8 *:p-2 odd:*:bg-gray-200 last:*:text-red-600
+          first:*:text-green-600"
+          <br />
+          class="grid grid-cols-[minmax(0,300px)_1fr] gap-2 *:bg-gray-300 *:p-4"
+        </p>
+      </div>
+      <!-- fim contante -->
+
+      <!-- inicio exemple -->
+      <div class="f-exemple">
+        <!-- inicio -->
+        <div class="grid grid-cols-2 gap-x-4 gap-y-8">
+          <div class="bg-gray-300 p-4">Item 1</div>
+          <div class="bg-gray-300 p-4">Item 2</div>
+          <div class="bg-gray-300 p-4">Item 3</div>
+          <div class="bg-gray-300 p-4">Item 4</div>
+        </div>
+        <br />
+        <div
+          class="grid grid-cols-3 gap-x-4 gap-y-8 *:p-2 odd:*:bg-gray-200 last:*:text-red-600 first:*:text-green-600"
+        >
+          <div>Item 1</div>
+          <div>Item 2</div>
+          <div>Item 3</div>
+          <div>Item 4</div>
+
+          <div>Item 1</div>
+          <div>Item 2</div>
+          <div>Item 3</div>
+          <div>Item 4</div>
+          <div>Item 4</div>
+        </div>
+        <br />
+        <div
+          class="grid grid-cols-[minmax(0,300px)_1fr] gap-2 *:bg-gray-300 *:p-4"
+        >
+          <div>minmax(0,300px)</div>
+          <div>1fr</div>
+        </div>
+
+        <!-- fim -->
+      </div>
+      <!-- fim exemple -->
+    </div>
+    <!-- fim container -->
+
+    <!-- inicio container -->
+    <div class="f-container">
+      <!-- conteint -->
+      <div class="f-content">
+        <h2>Grid Item</h2>
+        <p>
+          Utilize col-span- e row-span- para controlar o espaçamento e o alcance
+          dos itens.<br />Utilize col-start- e col-end- para posicionar itens em
+          um local específico do grid.
+        </p>
+
+        <p class="f-code">
+          class="grid grid-cols-3 gap-2 *:bg-gray-300 *:p-4"<br />
+          div filho<br />class="col-span-full"<br />class="col-span-2
+          row-span-2"<br />class="col-start-2"<br />class="row-start-3
+          col-start-3"
+        </p>
+      </div>
+      <!-- fim contante -->
+
+      <!-- inicio exemple -->
+      <div class="f-exemple">
+        <!-- inicio -->
+        <div class="grid grid-cols-3 gap-2 *:bg-gray-300 *:p-4">
+          <div class="col-span-full">Item 1: col-span-full</div>
+          <div class="col-span-2 row-span-2">Item 2: col-span-2 row-span-2</div>
+          <div>Item 3</div>
+          <div>Item 4</div>
+        </div>
+        <br />
+        <div class="grid grid-cols-3 gap-2 *:bg-gray-300 *:p-4">
+          <div class="col-start-2">Item 1: col-start-2</div>
+          <div class="row-start-3 col-start-3">
+            Item 2: row-start-3 col-start-3
+          </div>
+          <div>Item 3</div>
+          <div>Item 4</div>
+        </div>
+
+        <!-- fim -->
+      </div>
+      <!-- fim exemple -->
+    </div>
+    <!-- fim container -->
   </body>
 </html>
