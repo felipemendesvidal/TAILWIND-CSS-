@@ -950,5 +950,170 @@
       </div>
     </div>
     <!-- fim container -->
+
+    <!-- inicio container -->
+    <div class="f-container">
+      <div class="f-content">
+        <h2>Escala Tipográfica</h2>
+        <p>
+          para definir tamanho de font (por parão usa o text-base)<br />text-xs
+          / sm / lg / xl / 2xl ... 9xl - font-size<br />
+          <b>Define estilo e peso:</b><br />
+
+          font-serif / sans / mono - font-family
+          <br />
+          font-bold / light / medium / black - font-weight
+          <br />
+          italic - font-style<br />
+          <b>Alinhamento do texto:</b><br />
+          text-left / center / right - text-align
+          <br />
+          text-balance / pretty / nowrap - text-wrap
+          <br />
+          uppercase / lowercase / capitalize - text-transform<br />
+          <b>espaçamentos</b><br />
+          leading-normal / none / relaxed / 3 ... 10 - line-height
+          <br />
+          text-xl/relaxed - font-size + line-height
+          <br />
+          tracking-wide / tight - letter-spacing<br />
+          <b>Decoração do texto:</b><br />
+          underline / line-through / no-underline - text-decoration
+          <br />
+          underline-offset-2 - text-underline-offset
+          <br />
+          decoration-gray-200 - text-decoration-color
+          <br />
+          decoration-0 / 2 ... 8 - text-decoration-thickness
+          <br />
+          decoration-dashed / wavy / dotted - text-decoration-style<br />
+        </p>
+
+        <p class="f-code">
+          class="text-xs"<br />
+          class="text-sm"<br />
+          class="text-base"<br />
+          class="text-lg"<br />
+          class="text-xl"<br />
+          class="text-2xl"<br />
+          class="text-5xl"
+        </p>
+      </div>
+
+      <div class="f-exemple">
+        <!-- inicio -->
+        <div class="bg-slate-200 p-6 rounded-lg mb-1">
+          <h2>Escala</h2>
+          <p class="text-xs">Escala tipográfica - text-xs</p>
+          <p class="text-sm">Escala tipográfica - text-sm</p>
+          <p class="text-base">Escala tipográfica - text-base</p>
+          <p class="text-lg">Escala tipográfica - text-lg</p>
+          <p class="text-xl">Escala tipográfica - text-xl</p>
+          <p class="text-2xl">Escala tipográfica - text-2xl</p>
+          <p class="text-5xl">Escala tipográfica - text-5xl</p>
+        </div>
+
+        <div class="bg-slate-200 p-6 rounded-lg mb-1">
+          <h2>peso</h2>
+          <h1 class="text-2xl font-serif font-bold mb-4">Aurora Boreal</h1>
+          <p class="text-lg font-mono">
+            Descubra o melhor período para observar a deslumbrante Aurora
+            Boreal, com o céu iluminado por milhares de estrelas. Desperte ao
+            som dos pássaros e participe das nossas caminhadas ao ar livre para
+            viver essa experiência mágica.
+          </p>
+        </div>
+
+        <div class="bg-slate-200 p-6 rounded-lg mb-1">
+          <h2>alinhamento</h2>
+          <h1 class="font-serif font-bold text-3xl text-center uppercase">
+            Aurora Boreal
+          </h1>
+          <p class="text-lg w-96 mt-4 mx-auto text-center">
+            Descubra o melhor período para observar a deslumbrante Aurora
+            Boreal, com o céu iluminado por milhares de estrelas. Desperte ao
+            som dos pássaros e participe das nossas caminhadas ao ar livre para
+            viver essa experiência mágica.
+          </p>
+        </div>
+
+        <div class="bg-slate-200 p-6 rounded-lg mb-1">
+          <h2>espaçamento e decoração</h2>
+          <h1
+            class="font-serif font-bold text-xl text-center tracking-wide uppercase"
+          >
+            Aurora Boreal
+          </h1>
+          <p
+            class="text-sm/relaxed w-96 mt-4 italic mx-auto text-center text-balance"
+          >
+            Descubra o melhor período para observar a deslumbrante Aurora
+            Boreal, com o céu iluminado por milhares de estrelas. Desperte ao
+            som dos pássaros e participe das nossas caminhadas ao ar livre para
+            viver essa experiência mágica.
+          </p>
+          <a
+            class="text-xl underline underline-offset-4 decoration-wavy decoration-4 decoration-purple-600"
+          >
+            Inscreva-se
+          </a>
+        </div>
+
+        <div class="bg-slate-200 p-6 rounded-lg">
+          <h2>exercicio</h2>
+          <!-- codigo -->
+          <section class="bg-lime-950 p-8 rounded-lg">
+            <p
+              class="text-lime-300 uppercase text-sm tracking-widest text-center mb-4"
+            >
+              Conecte-se com a natureza
+            </p>
+            <h2
+              class="font-serif capitalize text-white text-6xl mb-8 mx-auto text-center max-w-3xl"
+            >
+              Cada som, cada momento, uma nova descoberta
+            </h2>
+
+            <div class="flex gap-8">
+              <div class="bg-lime-900 p-6 rounded-2xl grid gap-4">
+                <h3 class="text-lime-300 font-serif text-2xl">Lua Nova</h3>
+                <div>
+                  <p class="text-white text-5xl font-serif">23</p>
+                  <p class="text-white text-xl">Março 2049</p>
+                </div>
+                <p class="text-lime-300 text-balance">
+                  Melhor período para observação astronômica. O Céu estará claro
+                  e as estrelas visíveis.
+                </p>
+                <a
+                  href="/"
+                  class="text-white justify-self-start py-2 px-4 bg-lime-950 rounded-full"
+                  >Reservar 23/03</a
+                >
+              </div>
+              <div class="bg-lime-900 p-6 rounded-2xl grid gap-4">
+                <h3 class="text-lime-300 font-serif text-2xl">Aurora Boreal</h3>
+                <div>
+                  <p class="text-white text-5xl font-serif">15</p>
+                  <p class="text-white text-xl">Abril 2049</p>
+                </div>
+                <p class="text-lime-300 text-balance">
+                  Melhor período para observação da Aurora Boreal, o céu estará
+                  iluminado pelas estrelas.
+                </p>
+                <a
+                  href="/"
+                  class="text-white justify-self-start py-2 px-4 bg-lime-950 rounded-full"
+                  >Reservar 15/04</a
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!--  fim-->
+      </div>
+    </div>
+    <!-- fim container -->
   </body>
 </html>
