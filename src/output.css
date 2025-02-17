@@ -722,6 +722,10 @@ video {
   margin-top: -1rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -758,8 +762,8 @@ video {
   margin-top: 2rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .box-border {
@@ -897,6 +901,10 @@ video {
   max-width: 48rem;
 }
 
+.max-w-screen-sm {
+  max-width: 640px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1008,6 +1016,10 @@ video {
 
 .justify-self-start {
   justify-self: start;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .text-wrap {
@@ -1338,22 +1350,44 @@ video {
   background-color: rgb(113 63 18 / var(--tw-bg-opacity, 1));
 }
 
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity, 1));
-}
-
-.bg-zinc-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(161 161 170 / var(--tw-bg-opacity, 1));
-}
-
 .bg-\[url\(\'\.\.\/img\/grid\.svg\'\)\] {
   background-image: url('../img/grid.svg');
 }
 
 .bg-\[url\(\'\.\/img\/grid\.svg\'\)\] {
   background-image: url('./img/grid.svg');
+}
+
+.bg-\[url\(\'\.\/img\/padrao\.svg\'\)\] {
+  background-image: url('./img/padrao.svg');
+}
+
+.bg-\[url\(\'img\/floresta\.jpg\'\)\] {
+  background-image: url('img/floresta.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/floresta\.jpg\'\)\] {
+  background-image: url('./img/floresta.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/floresta\.jpg\'\)\] {
+  background-image: url('../img/floresta.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-2 {
@@ -1368,8 +1402,16 @@ video {
   padding: 1.5rem;
 }
 
+.p-7 {
+  padding: 1.75rem;
+}
+
 .p-8 {
   padding: 2rem;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .px-4 {
@@ -1407,6 +1449,10 @@ video {
 
 .pt-\[calc\(10\%-20px\)\] {
   padding-top: calc(10% - 20px);
+}
+
+.pt-60 {
+  padding-top: 15rem;
 }
 
 .text-left {
@@ -1483,6 +1529,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-4xl\/tight {
+  font-size: 2.25rem;
+  line-height: 1.25;
 }
 
 .font-bold {
@@ -1631,6 +1682,10 @@ video {
 
 .decoration-4 {
   text-decoration-thickness: 4px;
+}
+
+.decoration-2 {
+  text-decoration-thickness: 2px;
 }
 
 .underline-offset-2 {
